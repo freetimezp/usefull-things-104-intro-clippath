@@ -14,10 +14,10 @@ gsap.to("h2", 1.5, {
     },
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     let overlay = document.querySelector(".overlay");
 
-    overlay.addEventListener("click", function () {
+    overlay.addEventListener("click", () => {
         gsap.to("h2 div", 1.5, {
             yPercent: -100,
             ease: "power4.inOut",
